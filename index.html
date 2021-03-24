@@ -32,6 +32,11 @@
     $(".campos input").on("focus",function(){
         $(this).addClass("focus");
     });
+
+    $(".campos input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+    });
     </script>
 
 
